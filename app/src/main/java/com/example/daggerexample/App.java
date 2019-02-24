@@ -11,7 +11,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        component= DaggerApplicationComponent.builder().applicationModule(new ApplicationModule(this)).build();
+        component= DaggerApplicationComponent.builder().applicationModule(new ApplicationModule(this)).build(); //Takes the dependency from Module and store it in component
     }
 
     public ApplicationComponent getComponent(){

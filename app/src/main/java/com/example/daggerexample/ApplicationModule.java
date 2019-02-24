@@ -17,7 +17,9 @@ public class ApplicationModule {
     }
     @Provides
     @Singleton
-    public Context providesContext(){
+    public Context providesContext() {     /* Provides the application dependencies. */
         return application;
     }
 }
+
+/* Module define the classes & methods which provide the dependencies. */

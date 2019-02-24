@@ -5,8 +5,10 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 
-@Singleton
-@Component(modules = ApplicationModule.class)
+@Singleton //Only one time instantiated
+@Component(modules = ApplicationModule.class)  //Enables the modules
 public interface ApplicationComponent {
-    void inject(MainActivity target);
+    void injection(MainActivity target);  //Injection method inject dependencies
 }
+
+/* This is the component of the dagger 2. Component enables the modules & is used to inject the dependencies. */
